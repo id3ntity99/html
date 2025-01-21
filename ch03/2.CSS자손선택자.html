@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. 자손 선택자</title>
+    <!--
+        날짜: 2025/01/20
+        이름: 이현민
+        내용: CSS 자손 선택자 실습하기 
+    -->
+    <style>
+      h3 {
+        color: greenyellow;
+      }
+      /*자식 선택자*/
+      section > h3 {
+        color: blue;
+      }
+
+      .txt1 > em {
+        color: green;
+      }
+
+      /*후손 선택자*/
+      .txt2 b {
+        /*.txt2 > em > b{}*/
+        color: tomato;
+        font-size: 25px;
+      }
+
+      /*형제 선택자*/
+      #busan .sm {
+        color: red;
+      }
+
+      #busan .sm + li {
+        color: blueviolet;
+      }
+
+      #busan .sm ~ li {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>2. CSS 자손 선택자</h3>
+    <section>
+      <h3>Lorem Ipsum</h3>
+      <p class="txt1">
+        <em>
+          <b>Lorem ipsum</b>
+          dolor sit amet consectetur adipisicing elit. Odit beatae <br />
+        </em>
+      </p>
+      <p class="txt2">
+        <em>
+          modi doloremque, rerum aliquid iste corporis vitae quod tempora <br />
+          laudantium, <b>voluptatibus</b> sequi debitis doloribus facere!
+          Accusantium eveniet quasi ullam quo?
+        </em>
+        <br />
+      </p>
+    </section>
+    <ul>
+      <li>서울</li>
+      <li>대전</li>
+      <li>대구</li>
+      <li id="busan">
+        <strong> 부산 </strong>
+        <ol>
+          <li class="sm">서면</li>
+          <li>해운대</li>
+          <li>광안리</li>
+        </ol>
+      </li>
+      <li>광주</li>
+    </ul>
+  </body>
+</html>
