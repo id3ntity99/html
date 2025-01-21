@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3. CSS 구조 선택자</title>
+    <!--
+        날짜: 2025/01/20
+        이름: 이현민
+        내용: CSS 구조 선택자 실습하기 
+    -->
+    <style>
+      /*구조선택자*/
+      #city > li:first-child {
+        color: red;
+      }
+
+      #city > li:nth-child(2) {
+        color: green;
+      }
+
+      #city > li:nth-child(4) {
+        color: blue;
+      }
+
+      #city > em:last-child {
+        color: #33ff33;
+      }
+      #city > li:nth-of-type(1) {
+        background: yellow;
+      }
+
+      #city > em:nth-of-type(1) {
+        background-color: tomato;
+      }
+
+      /*ul that contains names of nations is third child of body tag; 
+      first-child = h3, second-child = #city, third-child = ul*/
+      ul:nth-child(3) > li:first-child {
+        color: red;
+      }
+      ul:nth-of-type(2) > li:nth-child(2) {
+        color: green;
+      }
+      ul:nth-last-of-type(1) > li:nth-child(4) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>3. CSS 구조 선택자</h3>
+    <ul id="city">
+      <li>서울</li>
+      <li>대전</li>
+      <li>대구</li>
+      <li>부산</li>
+      <li>광주</li>
+      <em>인천</em>
+      <em>울산</em>
+      <em>세종</em>
+    </ul>
+
+    <ul>
+      <li>한국</li>
+      <li>미국</li>
+      <li>일본</li>
+      <li>중국</li>
+      <li>호주</li>
+    </ul>
+  </body>
+</html>
