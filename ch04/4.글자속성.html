@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. 글자 속성</title>
+    <!--
+        날짜: 2025/01/22
+        이름: 이현민
+        내용: CSS 글자 속성 실습하기
+    -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Nanum+Pen+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Dokdo&family=Grandiflora+One&display=swap");
+      /*font-size*/
+      .box1 > p:nth-child(1) {
+        font-size: 16px; /*Browser's default font size*/
+      }
+      .box1 > p:nth-child(2) {
+        font-size: 32px;
+      }
+      .box1 > p:nth-child(3) {
+        font-size: 100%;
+      }
+      .box1 > p:nth-child(4) {
+        font-size: 200%;
+      }
+      .box1 > p:nth-child(5) {
+        font-size: 2em;
+      }
+
+      /*font-family*/
+      .box2 > p {
+        font-size: 32px;
+      }
+
+      .box2 > p:nth-child(1) {
+        font-family: "궁서체";
+      }
+      .box2 > p:nth-child(2) {
+        font-family: "돋움체";
+      }
+      .box2 > p:nth-child(3) {
+        font-family: "Nanum Pen Script", serif;
+      }
+      .box2 > p:nth-child(4) {
+        font-family: "Grandiflora One", serif;
+      }
+      .box2 > p:nth-child(5) {
+        font-family: "Dokdo", serif;
+      }
+
+      /*font-weight*/
+      .box3 > p:nth-child(1) {
+        font-weight: 100;
+      }
+      .box3 > p:nth-child(2) {
+        font-weight: 200;
+      }
+      .box3 > p:nth-child(3) {
+        font-weight: 400;
+      }
+      .box3 > p:nth-child(4) {
+        font-weight: bold;
+      }
+      .box3 > p:nth-child(5) {
+        font-weight: bolder;
+      }
+
+      /*font*/
+      .box4 > p:nth-child(1) {
+        font: normal 16px "궁서체";
+      }
+      .box4 > p:nth-child(2) {
+        font: normal 24px "Nanum Pen Script", serif;
+      }
+      .box4 > p:nth-child(3) {
+        font: normal 32px "돋움체";
+      }
+      .box4 > p:nth-child(4) {
+        font: bold 16px "Grandiflora One", serif;
+      }
+      .box4 > p:nth-child(5) {
+        font: normal;
+      }
+
+      /*line-height*/
+      .box5 > p {
+        line-height: 42px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>4. 글자 속성</h3>
+
+    <h4>font-size</h4>
+    <div class="box1">
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+    </div>
+
+    <h4>font-family</h4>
+    <div class="box2">
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+    </div>
+
+    <h4>font-weight</h4>
+    <div class="box3">
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+    </div>
+
+    <h4>font</h4>
+    <div class="box4">
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+      <p>Hello, 안녕하세요</p>
+    </div>
+
+    <h4>line-height</h4>
+    <div class="box5">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Minima id
+        velit delectus consequuntur quasi. Suscipit, dicta quaerat. <br />
+        Nisi nulla sit libero id consectetur doloremque molestiae labore quod
+        <br />
+        quasi, quisquam debitis?
+      </p>
+    </div>
+  </body>
+</html>
