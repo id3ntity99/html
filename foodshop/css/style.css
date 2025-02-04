@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: normal 12px "돋움";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: auto;
+}
+
+header > div {
+  width: 100%;
+}
+
+header > div > * {
+  width: 1100px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/*header > .top*/
+header .top {
+  height: 36px;
+}
+
+header .top > div > p {
+  float: right;
+  margin-top: 10px;
+}
+
+/*header's logo area*/
+header > div:nth-child(2) {
+  height: 100px;
+}
+
+header > div:nth-child(2) > article {
+  position: relative;
+  padding: 10px;
+}
+
+header > div:nth-child(2) > article > a {
+  position: absolute;
+}
+
+header > div:nth-child(2) .shopping {
+  left: 10px;
+  bottom: 10px;
+}
+
+header > div:nth-child(2) .logo {
+  top: 25%;
+  left: 33%;
+}
+
+header > div:nth-child(2) .oneday_txt {
+  right: 10px;
+  bottom: 7px;
+}
+
+/*header's nav area*/
+header > div:nth-child(3) {
+  height: 54px;
+  background-color: #40382e;
+}
+
+header > div:nth-child(3) > nav > ul {
+  width: 100%;
+  height: 100%;
+}
+
+header > div:nth-child(3) > nav li {
+  float: left;
+  width: 11.11%;
+  height: 100%;
+}
+
+header > div:nth-child(3) > nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 54px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*main*/
+main {
+  width: 100%;
+  height: auto;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+main > section {
+  width: 100%;
+  height: auto;
+  border: 1px solid green;
+  box-sizing: border-box;
+}
+
+/*main > .slide*/
+main > section:nth-child(1) {
+  height: 352px;
+}
+
+main > section > article {
+  width: 1100px;
+  height: 100%;
+  border: 1px solid orange;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/*main > .go*/
+main > section:nth-child(2) {
+  height: 520px;
+}
+
+main > .go > article {
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+
+main > .go div {
+  float: left;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+main > .go div:nth-child(1) {
+  width: 412px;
+  height: 450px;
+}
+
+main > .go div:nth-child(2) {
+  width: 322px;
+  height: 220px;
+  margin-left: 11px;
+}
+
+main > .go div:nth-child(3) {
+  float: right;
+  width: 322px;
+  height: 220px;
+}
+
+main > .go div:nth-child(4) {
+  width: 322px;
+  height: 220px;
+  margin-left: 11px;
+  margin-top: 10px;
+}
+
+main > .go div:nth-child(5) {
+  float: right;
+  width: 322px;
+  height: 220px;
+  margin-top: 10px;
+}
+
+/*main > .oneday*/
+main > .oneday {
+  height: 190px;
+}
+
+/*main > .vegetable*/
+main > .vegetable {
+  height: 660px;
+}
+
+main > .vegetable ul {
+  width: 100%;
+  height: 312px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+main > .vegetable li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  border: 1px solid pink;
+  box-sizing: border-box;
+}
+
+/*main > .premium*/
+main > .premium {
+  height: 200px;
+}
+
+/*main > .seafood*/
+main > .seafood {
+  height: 660px;
+}
+
+main > .seafood ul {
+  width: 100%;
+  height: 312px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+main > .seafood li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  border: 1px solid pink;
+  box-sizing: border-box;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: auto;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+footer > div {
+  width: 100%;
+  border: 1px solid green;
+  box-sizing: border-box;
+}
+
+footer > div:first-child {
+  height: 50px;
+}
+
+footer > div:nth-child(1) > div {
+  width: 1100px;
+  height: 100%;
+  border: 1px solid orange;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+footer > div:nth-child(2) {
+  height: 156px;
+}
+
+footer > div:nth-child(2) > div {
+  width: 1100px;
+  height: 100%;
+  border: 1px solid orange;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
