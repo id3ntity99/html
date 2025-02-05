@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font: normal 12px "돋움";
+  font: normal 12px "noto sans korean";
 }
 
 ul,
@@ -44,6 +44,7 @@ header > div > * {
 /*header > .top*/
 header .top {
   height: 36px;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 header .top > div > p {
@@ -112,32 +113,51 @@ header > div:nth-child(3) > nav a {
 main {
   width: 100%;
   height: auto;
-  border: 1px solid blue;
-  box-sizing: border-box;
 }
 
 main > section {
   width: 100%;
   height: auto;
-  border: 1px solid green;
-  box-sizing: border-box;
-}
-
-/*main > .slide*/
-main > section:nth-child(1) {
-  height: 352px;
 }
 
 main > section > article {
   width: 1100px;
   height: 100%;
-  border: 1px solid orange;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
+/*main > .slider*/
+main > .slider {
+  height: 352px;
+  background: #ffeed4;
+}
+
+main > .slider > article {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main > .slider ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+main > .slider ul > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+main > .slider ul > li:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
 /*main > .go*/
-main > section:nth-child(2) {
+main > .go {
   height: 520px;
 }
 
@@ -146,45 +166,87 @@ main > .go > article {
   box-sizing: border-box;
 }
 
-main > .go div {
+main > .go > article > .banner {
+  position: relative;
   float: left;
-  border: 1px solid gray;
-  box-sizing: border-box;
 }
-main > .go div:nth-child(1) {
+
+main > .go > article > .banner > a {
+  position: absolute;
+  left: 26px;
+  top: 36px;
+}
+
+main > .go > article > .banner1 {
   width: 412px;
   height: 450px;
+  background-image: url(../images/main_go_bg1.png);
 }
 
-main > .go div:nth-child(2) {
+main > .go > article > .banner2 {
   width: 322px;
   height: 220px;
   margin-left: 11px;
+  background-image: url(../images/main_go_bg2.png);
 }
 
-main > .go div:nth-child(3) {
+main > .go > article > .banner3 {
   float: right;
   width: 322px;
   height: 220px;
+  background-image: url(../images/main_go_bg3.png);
 }
 
-main > .go div:nth-child(4) {
+main > .go > article > .banner4 {
   width: 322px;
   height: 220px;
   margin-left: 11px;
   margin-top: 10px;
+  background-image: url(../images/main_go_bg4.png);
 }
 
-main > .go div:nth-child(5) {
+main > .go > article > .banner5 {
   float: right;
   width: 322px;
   height: 220px;
   margin-top: 10px;
+  background-image: url(../images/main_go_bg5.png);
+}
+
+main > .go .banner .category {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff6312;
+}
+
+main > .go .banner .title {
+  font-size: 24px;
+  color: #fcfffd;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main > .go .banner .title.dark {
+  color: #3c362a;
+}
+
+main > .go .banner1 .title > i {
+  display: block;
+  margin-top: 24px;
+  font-size: 14px;
 }
 
 /*main > .oneday*/
 main > .oneday {
   height: 190px;
+  background-image: url(../images/oneday_bg.png);
+  background-size: cover;
+  background-position: 50% center;
+}
+
+main > .oneday > article img {
+  margin-top: 50px;
 }
 
 /*main > .vegetable*/
@@ -192,24 +254,87 @@ main > .vegetable {
   height: 660px;
 }
 
-main > .vegetable ul {
-  width: 100%;
-  height: 312px;
-  border: 1px solid gray;
+main > .vegetable > article {
+  padding: 60px 0px 40px;
   box-sizing: border-box;
+  text-align: center;
 }
 
-main > .vegetable li {
+main .thumb_rolling {
+  width: 100%;
+  height: 312px;
+  margin-top: 36px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+main .thumb_rolling > li {
   float: left;
   width: 25%;
   height: 100%;
-  border: 1px solid pink;
+  padding: 10px;
   box-sizing: border-box;
+}
+
+main .thumb_rolling > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main .thumb_rolling > li img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+main .thumb_rolling > li h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #41392f;
+  margin-top: 12px;
+}
+main .thumb_rolling > li p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #959595;
+  margin: 12px 0 26px;
+}
+
+main .thumb_rolling > li h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+main .all {
+  display: block;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #efefef;
+  box-shadow: 0px 2px 2px #999;
+  text-align: center;
+  line-height: 50px;
+  margin: 56px auto 0;
+  color: #626262;
+  font: 15px;
+  font-weight: bold;
 }
 
 /*main > .premium*/
 main > .premium {
   height: 200px;
+  background-image: url(../images/premium_bg.png);
+  background-size: cover;
+  background-position: 50% center;
+}
+
+main > .premium > article {
+  text-align: center;
+}
+
+main > .premium > article img {
+  margin-top: 52px;
 }
 
 /*main > .seafood*/
@@ -217,55 +342,84 @@ main > .seafood {
   height: 660px;
 }
 
+main > .seafood > article {
+  padding: 60px 0px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 main > .seafood ul {
   width: 100%;
   height: 312px;
-  border: 1px solid gray;
-  box-sizing: border-box;
 }
 
 main > .seafood li {
   float: left;
   width: 25%;
   height: 100%;
-  border: 1px solid pink;
-  box-sizing: border-box;
 }
 
 /*footer*/
 footer {
   width: 100%;
   height: auto;
-  border: 1px solid blue;
   box-sizing: border-box;
 }
 
 footer > div {
   width: 100%;
-  border: 1px solid green;
   box-sizing: border-box;
 }
 
 footer > div:first-child {
   height: 50px;
+  background-color: #626262;
+}
+
+footer .terms {
+  float: left;
+  margin-top: 14px;
+  color: #eee;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+footer .terms > a:first-child {
+  color: #ff6a00;
+}
+
+footer .terms > a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 footer > div:nth-child(1) > div {
   width: 1100px;
   height: 100%;
-  border: 1px solid orange;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
 footer > div:nth-child(2) {
   height: 156px;
+  background-color: #434343;
 }
 
 footer > div:nth-child(2) > div {
   width: 1100px;
-  height: 100%;
-  border: 1px solid orange;
-  box-sizing: border-box;
+  height: auto;
+  padding: 16px 0;
   margin: 0 auto;
+}
+
+footer > div:nth-child(2) p {
+  float: left;
+  color: #aca9a9;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+footer > div:nth-child(2) img {
+  float: right;
 }
