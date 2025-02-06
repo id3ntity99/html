@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: normal 12px "돋움";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+/* #wrapper */
+#wrapper {
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 35px;
+}
+
+header > h3 {
+  float: left;
+  margin-top: 10px;
+}
+
+header > .logo > a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: cetner;
+}
+
+/* main */
+#user {
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+footer > p {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #777;
+  overflow: hidden;
+}
+
+footer .copyright {
+  float: left;
+}
+
+footer .version {
+  float: right;
+}

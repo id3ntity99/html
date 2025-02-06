@@ -1,0 +1,75 @@
+#user > .info {
+  width: 600px;
+  height: auto;
+  margin: 60px auto;
+  overflow: hidden;
+}
+
+#user h2.title {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+#user > .info button {
+  cursor: pointer;
+}
+
+#user > .info table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 2px solid #111;
+  margin-bottom: 10px;
+}
+
+#user > .info table tr > td {
+  padding: 6px 12px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+}
+
+#user > .info table tr > td:nth-child(1) {
+  width: 105px;
+  background-color: #f5f8f9;
+}
+
+#user > .info table input {
+  width: 162px;
+  height: 22px;
+  border: 1px solid #e4eaec;
+  background-color: #f7f7f7;
+  text-indent: 6px;
+}
+
+#user > .info table button {
+  border: none;
+  vertical-align: bottom;
+}
+
+#user > .info table tr .nickInfo {
+  margin-bottom: 6px;
+}
+
+#user > .info > form .auth {
+  display: none;
+  margin-top: 6px;
+}
+
+.btnWithdraw {
+  padding: 5px;
+  background-color: #ed2f2f;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #bebebe;
+  text-align: center;
+  cursor: pointer;
+}
+
+#user > .info > form > div {
+  float: right;
+  margin-top: 10px;
+}
