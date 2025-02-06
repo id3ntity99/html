@@ -46,9 +46,24 @@ header > .logo > a {
 }
 
 /* main */
-#user {
+#wrapper > main {
   width: 100%;
   height: auto;
+}
+
+#wrapper > main > section {
+  width: 600px;
+  height: auto;
+  margin: 60px auto;
+  overflow: hidden;
+}
+
+#wrapper > main > section table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 2px solid #111;
 }
 
 /* footer */
@@ -65,4 +80,12 @@ footer .copyright {
 
 footer .version {
   float: right;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #bebebe;
+  text-align: center;
+  cursor: pointer;
 }
