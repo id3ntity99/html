@@ -1,0 +1,23 @@
+#find > section table tr > td:nth-child(1) {
+  width: 120px;
+}
+
+#find > section table tr > td:nth-child(2) {
+  font-weight: bold;
+}
+
+#find > section table tr > td {
+  padding: 12px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+}
+
+#find > section > p {
+  margin: 12px 0;
+  line-height: 20px;
+}
+
+#find > section > div {
+  float: right;
+  margin-top: 10px;
+}
